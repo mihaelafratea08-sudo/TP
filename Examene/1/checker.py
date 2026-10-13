@@ -63,8 +63,8 @@ def check_site(url):
     return {
         "status": response.status_code,
         "content_type": content_type,
-        "length": len(response.content),  # dimensiunea în octeți
-        "server": response.headers.get("Server", "unknown"),  # "unknown" dacă lipsește
+        "length": len(response.content), 
+        "server": response.headers.get("Server", "unknown"), 
     }
 
 
